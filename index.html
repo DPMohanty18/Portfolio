@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/5b1e11f872.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <!-- <a href="#">
+                <img src="images/logo.png" alt="logo" class="logo">
+            </a> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>Hello<br> I'm <span>Durga Pr. Mohanty</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user" id="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I’m Durga Prasanna Mohanty, a dedicated and enthusiastic student
+                        pursuing my Master's in Computer Applications (MCA) at 
+                        Trident Academy of Technology, Bhubaneswar.  
+                        My academic journey has equipped me with a robust understanding of 
+                        both the theoretical and practical facets of computer science.
+                         I have cultivated skills in data science, web development, Java programming, 
+                        Python programming, and database management systems (DBMS). <br><br>
+                        I am passionate about utilizing technology to address real-world challenges and am always eager to learn and embrace new opportunities. Beyond my technical abilities, I am a collaborative team player with strong communication skills, enabling me to work effectively with colleagues and industry professionals.
+
+Feel free to browse my portfolio to see some of the projects I have undertaken and the skills I bring to the table. I am excited about the future and the prospect of making a meaningful impact through technology.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Science</span><br>Managing Big Data</li>
+                            <li><span>Web Devlopment</span><br>Designing web/app interfaces</li>
+                            <li><span>Python Programming</span><br>Custom software Development</li>
+                            <li><span>DBMS</span><br>Database creation and management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-Current</span><br>MCA from Trident Academy Of Technology,Bhubaneswar</li>
+                            <li><span>2020-2023</span><br>Bsc Data Science & Management from RAVENSHAW UNIVERSITY</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Data Science</h2>
+                    <p>With extensive expertise in data science,<br>
+                         I specialize in transforming complex data into actionable insights. <br>
+                     </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Web Development</h2>
+                    <p>With hands on experience in Web Development,<br>
+                        I specialize in creating robust, scalable, responsive and user-friendly websites and applications. <br>
+                     </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Programming</h2>
+                    <p>With my knowledge in Python Programming ,<br>
+                        My services include custom software development, automation scripts, data analysis, and machine learning implementation.<br>
+                     </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/work1.jpeg" alt="work1">
+                    <div class="layer">
+                        <h3>Weather Forecasting</h3>
+                        <p>This site shows the current as well as<br>forcasted weather of a location given by user</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/DPMohanty18" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ----------------------contact-------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>durgaprasannamohanty888@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>6370187261</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/rahul.g3mini/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/rahulisafk"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/durga-prasanna-mohanty-9b3a5230a/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="E-mail" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © DPM</p>
+        </div>
+    </div>
+    <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+    sidemenu.style.right = "0";
+    }
+    function closemenu(){
+    sidemenu.style.right = "-200px";
+    }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzgx2R-L9BTIwDLNVHHPsOek18fvaHJ_zzUBNWk8Xq9X7lhbkhjzKYmhBt4GKkl96ZXvQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
